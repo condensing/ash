@@ -14,25 +14,77 @@
             height: 100vh;
             font-family: Arial, sans-serif;
             flex-direction: column;
+            color: white;
         }
 
         h1 {
-            color: white;
             font-size: 4rem;
             font-weight: bold;
             margin: 0;
         }
 
         p {
-            color: white;
             font-size: 1.2rem;
             margin-top: 10px;
+        }
+
+        /* Footer container */
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Grey line */
+        .line {
+            width: 60%;
+            height: 1px;
+            background-color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Link blocks */
+        .links {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            opacity: 0.6;
+        }
+
+        /* Copyright text */
+        .copyright {
+            color: #444;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <h1>ash.skin</h1>
     <p>(coming soon)</p>
+
+    <div class="footer">
+        <div class="line"></div>
+        <div class="links">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://discord.com" target="_blank">Discord</a>
+        </div>
+        <div class="copyright">
+            ashton © all rights reserved
+        </div>
+    </div>
 </body>
 </html>
-
